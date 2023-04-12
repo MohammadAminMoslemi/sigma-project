@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Glyphicons";
+    src: url("/wwwroot/webfonts/FontIcon.eot");
+    src: url("/wwwroot/webfonts/FontIcon.eot?#iefix") format("embedded-opentype"), url("/wwwroot/webfonts/FontIcon.woff") format("woff"), url("/wwwroot/webfonts/FontIcon.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box !important;
+    text-decoration: none;
+}
+
+.header {
+    background-image: url("../images/headerPattern.png");
+    background-repeat: repeat;
+    background-size: 40px 40px;
+}
+
+/* main logo */
+.header .mainLogo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* select lamguage*/
+.selectLanguage ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.selectLanguage ul li a {
+    color: gray;
+    transition: all .3s;
+}
+
+.selectLanguage li a:hover {
+    color: black;
+}
+
+.selectLanguage li:first-child {
+    order: 1;
+}
+
+.selectLanguage li:last-child {
+    order: 3;
+}
+
+.selectLanguage ul::after {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: gray;
+    display: block;
+    order: 2;
+    margin: 0 3px;
+}
+
+/* search */
+.searchBox .input-group {
+    max-width: 200px;
+    border-radius: 20px;
+}
+
+.searchBox .form-outline #search-focus {
+    padding: 4px 8px;
+    border-radius: 30px;
+}
+
+.searchBox .searchBtn {
+    position: absolute;
+    padding: 4px 8px;
+}
+
+/* social Media */
+
+.bottomHead .socialMedia ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bottomHead .socialMedia ul a {
+    text-decoration: none;
+    display: block;
+}
+
+.bottomHead .socialMedia ul a i:hover {
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.6);
+}
+
+.bottomHead .socialMedia ul li a i {
+    font-family: "Glyphicons";
+    font-size: 16px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transition: all .3s;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.bottomHead .socialMedia ul li a i::before {
+    font-style: normal;
+}
+
+.bottomHead .socialMedia ul li a .itelegram {
+    background-color: lightskyblue;
+}
+
+.bottomHead .socialMedia ul li a .itelegram::before {
+    content: '\e750';
+}
+
+.bottomHead .socialMedia ul li a .iinstagram {
+    background-color: purple;
+}
+
+.bottomHead .socialMedia ul li a .iinstagram::before {
+    content: '\e80b';
+}
+
+.bottomHead .socialMedia ul li a .itweeter {
+    background-color: blue;
+}
+
+.bottomHead .socialMedia ul li a .itweeter::before {
+    content: '\e749';
+
+}
+
+.bottomHead .socialMedia ul li a .iaparat {
+
+    background-color: red;
+}
+
+.bottomHead .socialMedia ul li a .iaparat::before {
+    content: '\e701';
+
+}
+
+.bottomHead .socialMedia ul li a .ifacebook {
+    background-color: darkblue;
+}
+
+.bottomHead .socialMedia ul li a .ifacebook::before {
+    content: '\e747';
+}
+
+.bottomHead .socialMedia ul li a .ilinkdin {
+    background-color: palegreen;
+}
+
+.bottomHead .socialMedia ul li a .ilinkdin::before {
+    content: '\e892';
+}
+
+
+/* Mega Menu */
+.navigate {
+    background-color: #656565;
+}
+
+.navigate .menu-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigate .menu-container>ul {
+    display: flex;
+    flex-flow: wrap row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.navigate .menu-container ul>li.dropdown {
+    position: static;
+}
+
+.navigate .menu-container ul>li.dropdown>.menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    transition: all .8s;
+    background-color: #656565;
+
+}
+
+.navigate .menu-container ul>li.dropdown>.menu>ul {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.navigate .menu-container ul>li.dropdown>.menu>ul>.sub-dropdown {
+    width: 25%;
+    padding: 12px;
+}
+
+.navigate .menu-container ul>li.dropdown>.menu>ul>.sub-dropdown>.panel-heading {
+    text-align: right;
+    color: #fff;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.navigate .menu-container ul li a {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    display: block;
+    transition: all .3s;
+}
+
+.navigate .menu-container ul li a:hover {
+    color: #fff;
+}
+
+.navigate .menu-container ul li.dropdown a {
+    padding-left: 24px;
+}
+
+.navigate .menu-container ul li.dropdown>a::before {
+    content: "\E812";
+    font-family: "Glyphicons";
+    font-size: 14px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.navigate .menu-container ul li.dropdown>.menu>ul>.sub-dropdown .sub-menu {
+    display: flex;
+    flex-flow: wrap column;
+    text-align: right;
+}
+
+.navigate .menu-container ul {}
