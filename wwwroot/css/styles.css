@@ -252,4 +252,222 @@
     text-align: right;
 }
 
-.navigate .menu-container ul {}
+.carousel-indicators>button {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #fff !important;
+    border-radius: 10px;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+.mainSlider .carousel-item {
+    transition: transform 5s ease-in-out;
+}
+
+.imprtantNews .carousel-item {
+    transition: transform 8s ease-in-out;
+}
+
+.imprtantNews {
+    display: flex;
+    position: relative;
+}
+
+.imprtantNews .titleItem {
+    flex-shrink: 0;
+    padding: 5px 8px;
+    color: #fff;
+    background-color: rgb(190, 2, 2);
+    border-left: 3px solid rgb(95, 1, 1);
+}
+
+.imprtantNews .titleItem i::before {
+    content: "\E959";
+    font-size: 16px;
+    color: #fff;
+    font-family: "Glyphicons";
+    font-style: normal;
+    margin-left: 5px;
+}
+
+.imprtantNews .carousel {
+    padding-left: 110px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+.imprtantNews .carousel .carousel-item h6 {
+    font-size: 12px;
+}
+
+.imprtantNews .carousel .carousel-control-prev {
+    width: 36px;
+    height: 36px;
+    left: 55px;
+    right: auto !important;
+}
+
+.imprtantNews .carousel .carousel-control-prev::before {
+    content: "\E814";
+    font-size: 16px;
+    color: #555;
+    font-family: "Glyphicons";
+    font-style: normal;
+}
+
+.imprtantNews .carousel .carousel-control-next {
+    left: 15px;
+    width: 36px;
+    height: 36px;
+}
+
+.imprtantNews .carousel .carousel-control-next::before {
+    content: "\E812";
+    font-size: 16px;
+    color: #555;
+    font-family: "Glyphicons";
+    font-style: normal;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* important news */
+.latestNews .impoNews {}
+
+/*cover news*/
+.latestNews .impoNews .coverNews {
+    border-bottom: 1px solid #bebebe;
+}
+
+.latestNews .impoNews .coverNews .coverlink {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.latestNews .impoNews .coverNews .coverlink span {
+    padding: 10px 12px;
+    font-weight: bold;
+    display: block;
+}
+
+/*list news*/
+.latestNews .impoNews ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.latestNews .impoNews ul li {
+    border-bottom: 1px solid #bebebe;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 4px 0;
+    text-overflow: ellipsis;
+}
+
+.latestNews .impoNews ul li:last-child {
+    border-bottom: none;
+
+}
+
+.latestNews .impoNews ul li a::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: rgb(190, 2, 2);
+
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.latestNews .impoNews ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.linkToNews {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linkToNews a {
+    font-size: 13px;
+    color: #fff;
+    border-bottom: 2px solid rgb(95, 1, 1);
+    background-color: rgb(190, 2, 2);
+    min-width: 80px;
+    text-align: center;
+    padding: 2px 12px;
+    text-decoration: none;
+}
+
+.latestNews .impoNews .coverNews h2 {}
+
+
+/*tab style*/
+.tabLayout {}
+
+.tabLayout .tabContainer {}
+
+.tabLayout .tabContainer .tabItems {}
+
+.tabLayout .tabContainer .tabItems .mainTab .tab-heading {
+    width: 25%;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab .tab-heading h6 {}
+
+.tabLayout .tabContainer .tabItems .mainTab ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab ul li {
+    border-bottom: 1px solid #bebebe;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 0;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab ul li:last-child {
+    border-bottom: none;
+
+}
+
+.tabLayout .tabContainer .tabItems .mainTab ul li a::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    background-color: rgb(190, 2, 2);
+
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    padding: 10px;
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .latestNews .impoNews .coverNews h2 {
+        font-size: 16px;
+    }
+}
