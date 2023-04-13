@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Glyphicons";
-    src: url("/wwwroot/webfonts/FontIcon.eot");
-    src: url("/wwwroot/webfonts/FontIcon.eot?#iefix") format("embedded-opentype"), url("/wwwroot/webfonts/FontIcon.woff") format("woff"), url("/wwwroot/webfonts/FontIcon.ttf") format("truetype");
+    src: url("wwwroot/webfonts/FontIcon.eot");
+    src: url("../webfonts/FontIcon.eot?#iefix") format("embedded-opentype"), url("../webfonts/FontIcon.woff") format("woff"), url("../webfonts/FontIcon.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -199,7 +199,7 @@
     width: 100%;
     transition: all .8s;
     background-color: #656565;
-
+    z-index: 5;
 }
 
 .navigate .menu-container ul>li.dropdown>.menu>ul {
@@ -335,11 +335,12 @@
 .img-responsive {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
 }
 
 
 /* important news */
-.latestNews .impoNews {}
 
 /*cover news*/
 .latestNews .impoNews .coverNews {
@@ -429,26 +430,26 @@
 
 .tabLayout .tabContainer .tabItems .mainTab .tab-heading h6 {}
 
-.tabLayout .tabContainer .tabItems .mainTab ul {
+.tabLayout .tabContainer .tabItems .mainTab .tab-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.tabLayout .tabContainer .tabItems .mainTab ul li {
+.tabLayout .tabContainer .tabItems .mainTab .tab-content ul li {
     border-bottom: 1px solid #bebebe;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 10px 0;
+    padding: 9px 0;
 }
 
-.tabLayout .tabContainer .tabItems .mainTab ul li:last-child {
+.tabLayout .tabContainer .tabItems .mainTab .tab-content ul li:last-child {
     border-bottom: none;
 
 }
 
-.tabLayout .tabContainer .tabItems .mainTab ul li a::before {
+.tabLayout .tabContainer .tabItems .mainTab .tab-content ul li a::before {
     content: "";
     width: 8px;
     height: 8px;
@@ -459,15 +460,68 @@
     display: inline-block;
 }
 
-.tabLayout .tabContainer .tabItems .mainTab ul li a {
+.tabLayout .tabContainer .tabItems .mainTab .tab-content ul li a {
     text-decoration: none;
     color: black;
     font-size: 11px;
     padding: 10px;
 }
 
+
+.tabLayout .tabContainer .tabItems .mainTab .nav .nav-item {
+    width: 25%;
+    transition: all .3s;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab .nav .nav-item button {
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-left: 1px solid #999;
+    transition: all .3s;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab .nav .nav-item button.active {
+    background-color: #999;
+    color: #fff;
+}
+
+.tabLayout .tabContainer .tabItems .mainTab .nav .nav-item:last-child button {
+    border-left: none !important;
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .tabLayout .tabContainer .tabItems .mainTab .tab-content ul li {
+        padding: 5px 0;
+    }
+
+    .tabLayout .tabContainer .tabItems .mainTab .tab-content ul li a {
+        padding: 0 10px;
+    }
+
+    .latestNews .impoNews .coverNews h2 {
+        font-size: 1.2rem;
+    }
+}
+
 @media (min-width:992px) and (max-width:1199px) {
     .latestNews .impoNews .coverNews h2 {
         font-size: 16px;
+    }
+
+    .navigate .menu-container ul li a,
+    .navigate .menu-container ul li a span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .navigate .menu-container ul li a {
+        font-size: 12px;
+        padding: 6px;
     }
 }
